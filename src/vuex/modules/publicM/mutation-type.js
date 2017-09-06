@@ -1,0 +1,2 @@
+
+export const COUNT_PUBLIC = 'COUNT_PUBLIC'
