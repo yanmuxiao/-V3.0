@@ -4,11 +4,14 @@
       <button @click="confirmFn">confirm</button>
       <button @click="toastFn">toast</button>
       <button @click="promptFn">prompt</button>
+
+      <button @click="loadingFn">loading</button>
+
   </div>
 </template>
 
 <script>
-
+import { mapGetters, mapActions } from 'vuex'
 export default {
   data () {
     return {
@@ -20,6 +23,10 @@ export default {
   computed: {
   },
   methods: {
+      ...mapActions(['loading_action']),
+      loadingFn() {
+          this.loading_action(true);
+      },
       alertFn() {
         this.$alert('欢迎使用 wc-messagebox', {
           title: '提示',

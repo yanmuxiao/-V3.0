@@ -5,6 +5,7 @@ import mutations from './mutations'
 
 
 const state = {
+	loading: false,
 	count_public: 100
 }
 
