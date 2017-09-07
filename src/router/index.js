@@ -13,11 +13,6 @@ export default new Router({
       path: '/',
       name: 'main',
       component: resolve => require(['@/views/Main'], resolve)
-    },
-    {
-      path: '/scroller',
-      name: 'scroller',
-      component: resolve => require(['@/views/Scroller'], resolve)
     }
   ]
 })
