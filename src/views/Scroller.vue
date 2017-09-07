@@ -1,9 +1,12 @@
 <template>
   <div class="mailbox-bh">
-      <scroller 
+      <div class="header">
+          <h1 class="title">Refresh & Infinite</h1>
+      </div>
+      <scroller style="top: 44px;"
         :on-refresh="refresh"
         :on-infinite="infinite"
-        noDataText="已经见底了">
+        noDataText="已经见底了！">
         <!-- content goes here -->
         
         <div v-for="(item, index) in items" class="row" :class="{'grey-bg': index % 2 == 0}">
