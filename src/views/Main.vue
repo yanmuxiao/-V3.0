@@ -3,7 +3,6 @@
       <button @click="alertFn">alert</button>
       <button @click="confirmFn">confirm</button>
       <button @click="toastFn">toast</button>
-      <button @click="promptFn">prompt</button>
   </div>
 </template>
 
@@ -52,21 +51,7 @@ export default {
       },
       toastFn() {
         this.$toast('恭喜您, 登录成功!', 2000);
-      },
-
-      promptFn() {
-          this.$prompt('hello world', {
-            title: '日了狗了',
-            placeholder: '到底有没有日狗',
-            style: {
-              'color':'red'
-            }
-        }).then(v => {
-            // console.log(v)
-            this.$toast('你的答案是:' + v);
-          })
       }
-    
     
 
   }

@@ -10,7 +10,7 @@ function resolve (dir) {
 module.exports = {
   entry: {
     app: './src/main.js',
-    'vendor': ['axios','vue','vue-router']
+    'vendor': ['babel-polyfill', 'axios', 'vue', 'vue-router']
   },
   output: {
     path: config.build.assetsRoot,
