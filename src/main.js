@@ -20,6 +20,7 @@ Vue.use(Prompt)
 Vue.use(Toast)
 
 
+
 import VueScroller from 'vue-scroller'
 Vue.use(VueScroller)
 
