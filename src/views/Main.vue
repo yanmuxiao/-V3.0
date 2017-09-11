@@ -1,8 +1,5 @@
 <template>
   <div class="mailbox-bh">
-      <button @click="alertFn">alert</button>
-      <button @click="confirmFn">confirm</button>
-      <button @click="toastFn">toast</button>
   </div>
 </template>
 
@@ -19,51 +16,11 @@ export default {
   computed: {
   },
   methods: {
-      alertFn() {
-        this.$alert('欢迎使用 wc-messagebox', {
-          title: '提示',
-          btn: {
-            text: '确定'
-          }
-        })
-        .then(()=>{
-          this.$toast('你点击了确定');
-        })
-      },
-
-      confirmFn() {
-        this.$confirm('欢迎使用 wc-messagebox', {
-          title: '提示',
-          style: {
-            'font-size': '12px'
-          },
-          yes: {
-            text: '新按钮',
-            style: {
-              'font-size': '16px'
-            }
-          }
-        }).then(()=>{
-            this.$toast('你点击了确定');
-          }).catch(()=>{
-            this.$toast('你点击了取消');
-          })
-      },
-      toastFn() {
-        this.$toast('恭喜您, 登录成功!', 2000);
-      }
-    
-
   }
 
 }
 </script>
 
-
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-  * {
-    margin: 0;
-  }
+
 </style>

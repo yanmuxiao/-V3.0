@@ -12,6 +12,7 @@ Vue.config.productionTip = false
 
 
 // 弹窗插件 ==> 30k(js+css)
+// https://github.com/helicopters/wc-messagebox
 import {Alert, Confirm, Toast} from 'wc-messagebox'
 import 'wc-messagebox/style.css'
 Vue.use(Alert)
